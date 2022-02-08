@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/IdeaProjects.iml" filepath="$PROJECT_DIR$/IdeaProjects.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/CSC-240-Algorithms-and-Data-Structures.iml" filepath="$PROJECT_DIR$/.idea/CSC-240-Algorithms-and-Data-Structures.iml" />
+>>>>>>> 6601a9eb170075dde35cf365733c1776fb9fa2de
     </modules>
   </component>
 </project>
