@@ -25,7 +25,7 @@ public class Main {
         System.out.println("ap2 runtime: " + duration2);
     }
 
-    static void ap1(int[] X, int n){
+    static int[] ap1(int[] X, int n){
         int[] A = new int[n];
 
         for(int i = 0; i < n; i++) {
@@ -36,12 +36,13 @@ public class Main {
             A[i] = a / (i + 1);
         }
 
+        return A;
 //        for (int element: A){
 //            System.out.println(element);
 //        }
     }
 
-    static void ap2(int X[], int n){
+    static int[] ap2(int[] X, int n){
         int[] A = new int[n];
 
         int s = 0;
@@ -50,6 +51,7 @@ public class Main {
             A[i] = s/(i+1);
         }
 
+            return A;
 //        for (int element: A){
 //            System.out.println(element);
 //        }
