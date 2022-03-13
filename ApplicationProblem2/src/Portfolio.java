@@ -35,7 +35,7 @@ public class Portfolio {
 
         /**
          * Getter method for retrieving a stock's symbol
-         * @return
+         * @return String symbol
          */
         public String getSym(){
             return this.symbol;
@@ -116,9 +116,8 @@ public class Portfolio {
     public void readTransactions(String file){
         BufferedReader reader;
         try{
-            URL path = Portfolio.class.getResource(file);
-            File f = new File(path.getFile());
-            reader = new BufferedReader(new FileReader(f));
+            InputStream input = Portfolio.class.getClassLoader().getResourceAsStream(file);
+            reader = new BufferedReader(new InputStreamReader(input));
             String line = reader.readLine();
             while(line != null ){
 
